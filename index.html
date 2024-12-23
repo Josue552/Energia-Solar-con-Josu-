@@ -1,19 +1,23 @@
-<!DOCTYPE index.html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendiendo Energia Fotovoltaica con el Prof.Josué</title>
+    <title>Aprendiendo Energía Fotovoltaica con el Prof. Josué</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
+            background-image: url('imagenes/fondo.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* La imagen no se desplaza con el contenido */
         }
 
         header {
-            background-color: #005a9c;
+            background-color: rgba(0, 90, 156, 0.9); /* Color con transparencia */
             color: white;
             padding: 1rem;
             text-align: center;
@@ -36,6 +40,10 @@
 
         section {
             padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para mejorar la lectura */
+            border-radius: 10px;
+            margin: 1rem auto;
+            max-width: 800px;
         }
 
         .curso {
@@ -45,31 +53,22 @@
         }
 
         footer {
-            background-color: #005a9c;
+            background-color: rgba(0, 90, 156, 0.9); /* Fondo con transparencia */
             color: white;
             text-align: center;
             padding: 1rem;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll("button").forEach(button => {
-                button.addEventListener("click", () => {
-                    alert("Más información disponible próximamente.");
-                });
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
-        <h1>Aprendiendo Energia Fotovoltaica con el Prof.Josué</h1>
+        <h1>Aprendiendo Energía Fotovoltaica con el Prof. Josué</h1>
         <nav>
             <ul>
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -93,13 +92,21 @@
         <p>"Este curso cambió mi carrera profesional." - Juan P.</p>
     </section>
 
-    <section id="Fotos">
+    <section id="fotos">
         <h2>Fotos</h2>
-        <p>Proyectos, Monitoramiento, Instalación y Mantenimiento de sistemas solares.</p>  
-        <button>Más información</button> 
+        <p>Proyectos, monitoramiento, instalación y mantenimiento de sistemas solares.</p>
+        <div class="galeria">
+            <div class="foto">
+                <img src="fotos/solar1.jpg" alt="Paneles solares en instalación" style="max-width: 100%; height: auto;" />
+                <p>Paneles solares en instalación</p>
+            </div>
+            <div class="foto">
+                <img src="fotos/solar2.jpg" alt="Sistema fotovoltaico en operación" style="max-width: 100%; height: auto;" />
+                <p>Sistema fotovoltaico en operación</p>
+            </div>
         </div>
-        </section>                           
-    
+    </section>
+
     <footer id="contacto">
         <h2>Contacto</h2>
         <form action="enviar_formulario.php" method="post">
@@ -114,3 +121,13 @@
     </footer>
 </body>
 </html>
+
+      
+     
+         
+  
+
+      
+      
+     
+        
