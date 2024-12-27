@@ -44,29 +44,34 @@
             background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
             border-radius: 10px;
             margin: 2rem auto;
-            max-width: 800px;
+            max-width: 800px
+   
         }
 
-        .galeria {
+        .Galeria {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
         }
 
-        .galeria img {
-            width: 30%; /* Cada imagen ocupa el 30% del ancho disponible */
+        .Galeria img {
+            width: auto; /* Mantén la proporción */
+            max-width: 100%; /* No exceder el ancho del contenedor */
+            max-height: 300px; /* Limitar la altura máxima */
             border: 2px solid #ccc;
             border-radius: 5px;
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .galeria img:hover {
-            transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+        .Galeria img:hover {
+            transform: scale(1.1); /* Efecto de zoom */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+       
         }
 
-        footer {
+            
+         footer {
             background-color: rgba(0, 90, 156, 0.9);
             color: white;
             text-align: center;
@@ -81,7 +86,7 @@
             <ul>
                 <li><a href="#cursos">Cursos</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#Galeria">Galería</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -97,7 +102,7 @@
         <p>"Este curso cambió mi carrera profesional." - Juan P.</p>
     </section>
 
-    <section id="galeria">
+    <section id="Galeria">
         <h2>Galería de Fotos</h2>
         <p>Explora algunos de nuestros proyectos destacados:</p>
         <div class="Galeria">
@@ -111,10 +116,10 @@
     <h2>Mantenimiento de Sistemas Solares</h2>
     <p>Aquí encontrarás imágenes relacionadas con el mantenimiento de sistemas solares:</p>
     <div class="Galeria">
-        <img src="Galeria/IMG-20240503-WA0001.jpg" alt="Imagen 1 de mantenimiento">
-        <img src="Galeria/IMG-20240503-WA0002.jpg" alt="Imagen 2 de mantenimiento">
-        <img src="Galeria/Imagen_de_WhatsApp_2024-09-25_a_las_11.58.47_2322b5fb.jpg" alt="Imagen 3 de mantenimiento">
-        <img src="Galeria/Publicidad_de_Manutencao_Antes_e_Depois_02.png" alt="Imagen 4 de mantenimiento">
+        <img src="Galeria/IMG-20240503-WA0001.jpg" alt="Imagen 1 de mantenimiento"> 
+        <img src="Galeria/IMG-20240503-WA0002.jpg" alt="Imagen 2 de mantenimiento"> 
+        <img src="Galeria/Imagen_de_WhatsApp_2024-09-25_a_las_11.58.47_2322b5fb.jpg" alt="Imagen 3 de mantenimiento"> 
+        <img src="Galeria/Publicidad_de_Manutencao_Antes_e_Depois_02.png" alt="Imagen 4 de mantenimiento"> 
     </div>
 </section>
 
@@ -132,7 +137,6 @@
     </footer>
 </body>
 </html>
-
 
 
   
