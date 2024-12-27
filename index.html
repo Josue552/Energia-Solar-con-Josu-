@@ -44,7 +44,8 @@
             background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
             border-radius: 10px;
             margin: 2rem auto;
-            max-width: 800px;
+            max-width: 800px
+   
         }
 
         .galeria {
@@ -52,21 +53,23 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
-        }
 
-        .galeria img {
-            width: 30%; /* Cada imagen ocupa el 30% del ancho disponible */
-            border: 2px solid #ccc;
-            border-radius: 5px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+         .galeria img {
+    width: auto; /* Mantén la proporción */
+    max-width: 100%; /* No exceder el ancho del contenedor */
+    max-height: 300px; /* Limitar la altura máxima */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+      }
 
         .galeria img:hover {
-            transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+            transform: scale(1.1); /* Efecto de zoom */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
-        }
+      }
 
-        footer {
+            
+         footer {
             background-color: rgba(0, 90, 156, 0.9);
             color: white;
             text-align: center;
